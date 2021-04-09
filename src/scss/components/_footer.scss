@@ -1,0 +1,73 @@
+.footer {
+  height: 159px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f6f0e9;
+  padding: 29px 29px 66px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+  }
+  &__copyright {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.98px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  &__logo-link {
+    position: relative;
+    top: -33px;
+    svg {
+      position: relative;
+      width: 370px;
+      top: -15px;
+      left: 202px;
+    }
+  }
+  &__right {
+    display: flex;
+  }
+  &__item {
+    margin-right: 62px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    a {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.98px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    &--bold {
+      display: inline-block;
+      font-size: 10px;
+      line-height: 1.4;
+      letter-spacing: 0.98px;
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+  &__title {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  &__item-link {
+    svg {
+      width: 125px;
+      height: 50px;
+    }
+  }
+}

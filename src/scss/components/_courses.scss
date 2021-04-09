@@ -1,0 +1,291 @@
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .buttons__fill {
+    width: 152px;
+    height: 40px;
+  }
+  .button__fill-get-started {
+    width: 162px;
+    height: 50px;
+  }
+  &::before {
+    content: url(../img/courses/courses-bg.svg);
+    position: absolute;
+    top: -20px;
+    left: -57px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  &__title {
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: $fontFamilyMain;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 0.78;
+    letter-spacing: -0.8px;
+    margin-bottom: 45px;
+  }
+
+  &__description {
+    font-family: $fontFamilyMain;
+    max-width: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.38;
+    letter-spacing: -0.36px;
+    margin-bottom: 148px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 239px;
+    &::before {
+      content: url(../img/courses/courses-decor-2.svg);
+      position: absolute;
+      top: 342px;
+      right: -370px;
+      width: 100%;
+      height: 100%;
+    }
+    &::after {
+      content: url(../img/courses/courses-decor-3.svg);
+      position: absolute;
+      top: -93px;
+      right: -757px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content-left {
+    background-color: #e1592f;
+    max-width: 425px;
+    height: 380px;
+    padding: 0px 40px;
+    &::before {
+      content: url(../img/courses/courses-decor-1.svg);
+      position: absolute;
+      top: 46px;
+      left: -295px;
+      width: 100%;
+      height: 100%;
+    }
+    svg {
+      width: 253px;
+    }
+  }
+  &__content-right {
+    max-width: 425px;
+  }
+  &__content-title {
+    margin-bottom: -5px;
+  }
+
+  &__content-description,
+  &__content-confiland-description {
+    font-family: $fontFamilyMain;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: -0.31px;
+    color: #f6f0e9;
+    margin-bottom: 71px;
+  }
+
+  &__content-btn {
+  }
+
+  &__content-confiland {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 214px;
+    &::before {
+      content: url(../img/courses/courses-decor-5.svg);
+      position: absolute;
+      top: 394px;
+      right: -170px;
+      width: 100%;
+      height: auto;
+    }
+    &::after {
+      content: url(../img/courses/courses-decor-6.svg);
+      position: absolute;
+      top: -101px;
+      right: -741px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content-confiland-left {
+    background-color: #993a50;
+    max-width: 425px;
+    height: 380px;
+    padding: 0px 40px;
+    &::before {
+      content: url(../img/courses/courses-decor-4.svg);
+      position: absolute;
+      top: 36px;
+      left: -295px;
+      width: 100%;
+      height: 100%;
+    }
+    svg {
+      width: 225px;
+    }
+  }
+  &__content-confiland-right {
+    max-width: 425px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 703px;
+    height: 313px;
+    padding: 58px 127px 62px 126px;
+    background-color: #e1e1e1;
+    margin-bottom: 171px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 390px;
+      left: 286px;
+      transform: rotate(90deg);
+      width: 131px;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+  &__form-title {
+    font-family: $fontFamilyMain;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.47px;
+    margin-bottom: 11px;
+  }
+  &__form-text {
+    font-family: $fontFamilyMain;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.94;
+    letter-spacing: -0.36px;
+    margin-bottom: 39px;
+  }
+}
+
+//form
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: -579px;
+    transform: rotate(30deg);
+    width: 485px;
+    height: 1px;
+    background-color: #000;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 544px;
+    transform: rotate(30deg);
+    width: 485px;
+    height: 1px;
+    background-color: #000;
+  }
+}
+.form-input-text-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form-input-text {
+  font-family: $fontFamilyMain;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.06px;
+  padding: 15px 17px 14px;
+  padding-right: 111px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #000;
+  &:focus {
+    border: 1px solid #f7b334;
+  }
+}
+
+.form-input-btn {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-family: $fontFamilyMain;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  padding: 13px 19px;
+  height: 96%;
+  background-color: #f7b334;
+  cursor: pointer;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.31px;
+}
+
+.form-input-checkbox {
+  -webkit-appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #404040;
+  margin-right: 10px;
+  margin-right: 12px;
+  margin-left: -7px;
+}
+.form-input-checkbox:focus {
+  border: 1px solid teal;
+}
+.form-input-checkbox:checked {
+  position: relative;
+  background: none;
+}
+.form-input-checkbox:checked::after {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  content: "";
+  width: 16px;
+  height: 10px;
+  border: 4px solid #404040;
+  border-right: none;
+  border-top: none;
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,32 @@
+@import "vars";
+@import "fonts";
+@import "settings";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/menu";
+@import "./components/buttons";
+@import "./components/burger";
+@import "./components/benefits";
+@import "./components/courses";
+@import "./components/video";
+@import "./components/reviews";
+@import "./components/frase";
+@import "./components/steps";
+@import "./components/faq";
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.main {
+  margin-top: -3px;
+  position: relative;
+  z-index: 1;
+}
+
+@import "./media";

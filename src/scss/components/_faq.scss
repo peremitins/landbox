@@ -1,0 +1,145 @@
+.faq {
+  margin-bottom: 135px;
+  &__wrapper {
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 0.78;
+    letter-spacing: -0.8px;
+    margin-bottom: 29px;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.38;
+    letter-spacing: -0.36px;
+    margin-bottom: 87px;
+  }
+
+  &__content {
+    display: flex;
+    padding: 0px 169px;
+  }
+  &__questions {
+    flex: 0 0 50%;
+    margin-right: 164px;
+  }
+  &__contact {
+    flex: 0 0 50%;
+    margin-top: 17px;
+  }
+  &__contact-items {
+    display: flex;
+  }
+  &__contact-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+    margin-bottom: 4px;
+  }
+  &__contact-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: -0.27px;
+    margin-bottom: 20px;
+  }
+  &__contact-item {
+    width: 76px;
+    margin-right: 19px;
+    svg {
+      width: 51px;
+      height: 58px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.33;
+      letter-spacing: -0.27px;
+    }
+  }
+  &__contact-img {
+    padding-bottom: 20px;
+  }
+}
+
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  max-width: 459px;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.06;
+  letter-spacing: -0.36px;
+  padding-left: 58px;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .7;
+  }
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s;
+  padding-left: 58px;
+}
+.tab-content p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.27px;
+  padding: 12px 0;
+}
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab input[type="checkbox"] + label::after {
+  content: "+";
+}
+.tab input[type="radio"] + label::after {
+  content: url(../img/arrow-accordion.svg);
+  position: absolute;
+  top: -11px;
+  left: 3px;
+  transform: rotate(90deg);
+  transform-origin: 43% 50%;
+}
+.tab input[type="checkbox"]:checked + label::after {
+  content: url(../img/arrow-accordion.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+.tab input[type="radio"]:checked + label::after {
+  transform: rotate(0deg);
+  top: -5px;
+}

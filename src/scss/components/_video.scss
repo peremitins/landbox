@@ -1,0 +1,26 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 181px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 242px;
+    transform: rotate(90deg);
+    width: 131px;
+    height: 1px;
+    background-color: #000;
+  }
+  &__title {
+  }
+
+  &__description {
+    
+  }
+
+  &__video {
+   
+  }
+}
